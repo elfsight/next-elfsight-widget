@@ -16,7 +16,7 @@ npm install next-elfsight-widget
 
 ```tsx
 import React from 'react';
-import { ElfsightWidget } from 'react-elfsight-widget';
+import { ElfsightWidget } from 'next-elfsight-widget';
 
 function Component() {
   return <ElfsightWidget widgetID="6f4fc62b-74c9-45da-87fa-b71eda360cc0" />;

@@ -4,7 +4,7 @@
   "description": "The right way to add Elfsight Widget to your NextJS App",
   "license": "MIT",
   "author": "Isaev Maxim <isaev.maxismax@gmail.com>",
-  "homepage": "https://github.com/welcomemax/next-elfsight-widget",
+  "homepage": "https://github.com/elfsight/next-elfsight-widget",
   "scripts": {
     "clean": "rimraf ./dist",
     "format": "eslint --fix ./src",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/welcomemax/next-elfsight-widget"
+    "url": "https://github.com/elfsight/next-elfsight-widget"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
