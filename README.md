@@ -8,7 +8,7 @@ This package _DOES NOT_ contain any Elfsight Widgets itself.
 
 ## Installation
 
-```
+```bash
 npm install next-elfsight-widget
 ```
 
