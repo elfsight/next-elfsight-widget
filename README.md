@@ -2,7 +2,21 @@
 
 [![npm](https://img.shields.io/npm/dm/next-elfsight-widget)](https://www.npmjs.com/package/next-elfsight-widget)
 
-Wrapper over [react-elfsight-widget](https://www.npmjs.com/package/react-elfsight-widget) that adds [Elfsight](https://elfsight.com/) Widget to a NextJS App t dynamic.
+Wrapper over [react-elfsight-widget](https://www.npmjs.com/package/react-elfsight-widget) that adds [Elfsight](https://elfsight.com/) Widget to a NextJS App.
+
+The basic implementation is as simple as possible with using next/dynamic:
+
+```tsx
+import dynamic from 'next/dynamic';
+import { ElfsightWidgetProps } from 'react-elfsight-widget';
+
+export const ElfsightWidget = dynamic<ElfsightWidgetProps>(
+  async () => (await import('react-elfsight-widget')).ElfsightWidget,
+  {
+    ssr: false
+  }
+);
+```
 
 This package _DOES NOT_ contain any Elfsight Widgets itself.
 
@@ -19,7 +33,7 @@ import React from 'react';
 import { ElfsightWidget } from 'next-elfsight-widget';
 
 function Component() {
-  return <ElfsightWidget widgetID="6f4fc62b-74c9-45da-87fa-b71eda360cc0" />;
+  return <ElfsightWidget widgetId="6f4fc62b-74c9-45da-87fa-b71eda360cc0" />;
 }
 ```
 
